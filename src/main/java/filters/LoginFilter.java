@@ -98,11 +98,9 @@ public class LoginFilter implements Filter {
                         dispatcher.forward(request, response);
 
                         return;
-
                     }
                 }
             }
-
             //次のフィルタまたはサーブレットを呼び出し
             chain.doFilter(request, response);
         }
